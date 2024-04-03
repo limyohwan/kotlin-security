@@ -11,7 +11,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 data class MemberRequest(
-    val id: Long?,
+    var id: Long?,
     @field:NotBlank
     @JsonProperty("loginId")
     private val _loginId: String?,
